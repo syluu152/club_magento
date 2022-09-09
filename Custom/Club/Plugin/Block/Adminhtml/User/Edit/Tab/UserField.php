@@ -24,20 +24,19 @@ class UserField
         $form = $subject->getForm();
         if (is_object($form))
         {
-            $fieldset = $form->addFieldset('admin_user_club', ['legend' => __('User Club Field')]);
+            $fieldset = $form->addFieldset('admin_user_store_id', ['legend' => __('Store')]);
             $fieldset->addField(
-                'user_club',
+                'store_id',
                 'select',
                 [
-                    'name' => 'user_club',
-                    'label' => __('User Club'),
-                    'id' => 'user_club',
-                    'title' => __('User Club'),
-                    'values' => $this->_systemStore->getStoreValuesForForm(false, true)
+                    'name' => 'store_id',
+                    'label' => __('Store'),
+                    'title' => __('Store'),
+                    'values' => $this->_systemStore->getStoreValuesForForm(false, false),
+                    'class' => 'select'
 //                    'options' => $this->storeManager->getStore()->getName()
                 ]
             );
-
             $subject->setForm($form);
         }
 
