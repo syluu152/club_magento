@@ -33,8 +33,8 @@ class UserField
                     'label' => __('User Club'),
                     'id' => 'user_club',
                     'title' => __('User Club'),
-//                    'values' => $this->_systemStore->getStoreValuesForForm(false, true)
-                    'options' => $this->storeManager->getStore()->getName()
+                    'values' => $this->_systemStore->getStoreValuesForForm(false, true)
+//                    'options' => $this->storeManager->getStore()->getName()
                 ]
             );
 
