@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Customer_Store::menu" title="Customer Store" module="Customer_Store" sortOrder="20" resource="Customer_Store::menu" />
+        <add id="Customer_Store::customer_menu" title="Customer Store" module="Customer_Store" sortOrder="1" parent="Customer_Store::menu" action="customerstore_backend/customer/index" resource="Customer_Store::customer_menu" />
+    </menu>
+</config>
